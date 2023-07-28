@@ -5,7 +5,7 @@
     <div class="row">
       <div class="col-md-8">
         <section class="status_form">
-          @include('shared._status_form')
+          @include('shared._status_form', ['user' => Auth::user()])
         </section>
         <h4>微博列表</h4>
         <hr>
